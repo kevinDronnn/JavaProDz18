@@ -7,7 +7,7 @@ import java.util.List;
 public interface OrderService {
     public List<OrderDto> getAllOrders();
     public OrderDto getOrderById(int id);
-    public void addOrder(OrderDto orderDto);
+    public void saveOrder(OrderDto orderDto);
     public void updateOrder(int id, OrderDto newOrder);
     public void deleteOrder(int id);
 }

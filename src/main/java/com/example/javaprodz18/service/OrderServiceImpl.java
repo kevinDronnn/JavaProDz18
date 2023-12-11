@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void addOrder(OrderDto orderDto) {
+    public void saveOrder(OrderDto orderDto) {
         orderJDBCRepository.saveOrder(orderDto);
     }
 
