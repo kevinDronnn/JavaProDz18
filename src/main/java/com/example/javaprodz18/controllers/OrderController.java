@@ -15,13 +15,11 @@ public class OrderController {
 
     @GetMapping(name = "/{id}")
     public OrderDto getOrderById(@PathVariable(name = "id") int id){
-        OrderDto orderDto = orderService.getOrderById(id);
-        return orderDto;
+        return orderService.getOrderById(id);
     }
     @GetMapping()
     public List<OrderDto> getAllOrders(){
-        List<OrderDto> allOrders = orderService.getAllOrders();
-        return allOrders;
+        return orderService.getAllOrders();
     }
     @PostMapping()
     public void saveOrder(@RequestBody OrderDto orderDto){
